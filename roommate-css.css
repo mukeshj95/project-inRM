@@ -1,0 +1,228 @@
+/*************  Roommate Matching CSS ************/
+
+.heading {
+    text-align: center;
+    color: #33AAB3;
+    font-size: 32px;
+    padding: 10px 55px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.tag-line {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    color: #545454;
+}
+
+input::placeholder {
+    font-weight: 200;
+}
+
+#picker .field-icon {
+    top:8px;
+    font-size: 38px;
+}
+
+.column-full {
+    max-width: 750px;
+    padding-left: 15px;
+}
+
+.column label.inline-label {
+    color: #545454;
+    font-size: 17px;
+    font-family: "montserrat-medium",Helvetica,Arial,sans-serif;
+}
+
+.column-full h4 {
+    margin-top: 50px;
+    font-family: "montserrat-medium",Helvetica,Arial,sans-serif;
+    color: #545454;
+    font-weight: initial;
+    margin-bottom: 20px;
+}
+
+.radio-list .radio-group {
+    min-width: 140px;
+}
+
+#ProfessionNo {
+    position: relative;
+    left: -26px;
+}
+.required {
+    font-size: 12px;
+}
+
+.radio-list {
+    margin-bottom: 15px;
+}
+label[for='Anyone'] {
+    width: 165px;
+}
+.nomargin {
+    margin-bottom: 0;
+}
+.column-full label {
+    color: #545454;
+    font-size: 17px;
+    font-family: "montserrat-medium",Helvetica;
+    font-weight:100;
+    margin-bottom: 10px;
+}
+.uni-same {
+    font-size: 15px;
+}
+.column .column-row {
+    margin-bottom: 10px;
+}
+.margin {
+    margin-top: 40px;
+}
+
+#pets {
+    width:212px !important;
+}
+.half {
+    width: 78%;
+    float: right;
+}
+.half-margin {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+.half-col-10{
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-family: 'montserrat-italic';
+    color: #545454;
+    font-weight: 100;
+    font-size: 16px !important;
+}
+.details-match {
+    color: #545454;
+    font-size: 17px;
+    font-family: "montserrat-medium", Helvetica;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 18px;
+}
+
+.select-class {
+    margin-bottom: 15px;
+}
+.select2-container{
+    width: 350px !important;
+    margin-left: 25px;
+}
+
+[class^="icon-"] {
+    font-size: 38px;
+    color: #F7903C;
+    top: 48%;
+    right: 55px;
+    z-index: -1;
+    cursor: pointer;
+    position: absolute;
+}
+#picker1 {
+    width: 270px;
+    margin-bottom: 10px;
+}
+.nospace1 {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.rommie {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.roomie-find {
+    color: #545454;
+    font-size: 18px;
+    font-family: "montserrat-medium", Helvetica;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.text-box {
+    margin-bottom: 40px;
+}
+.bottom-p {
+    text-decoration: underline;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.footer-text1 {
+    font-size: 15px;
+    text-align: center;
+    padding: 30px 10px 0px 10px;
+    margin-bottom: 0;
+    color: #545454;
+    font-weight: 200;
+    font-style: italic;
+}
+.footer-text2 {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+    color: #545454;
+    font-weight: 200;
+    font-style: italic;
+}
+.submit-btn, .submit {
+    text-align: center;
+    min-width: 320px !important;
+}
+
+.column-name {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.column-email {
+    max-width: 550px;
+    margin-bottom: 15px;
+}
+.input_group1 {
+    margin-top: 50px;
+}
+.column-pic1 {
+    min-width: 300px;
+    position: relative;
+}
+
+.main-head {
+    position: absolute;
+    top: 5%;
+    right: 13%;
+    font-size: 40px;
+    color: #33AAB3;
+    font-weight: 800;
+}
+
+.head2 {
+    font-size: 75px;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    color: #F7903C;
+    text-align: center;
+    line-height: 1.2;
+}
+.container {
+    padding: 0 20px;
+}
+
+.picker {
+    position: absolute;
+}

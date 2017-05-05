@@ -1,0 +1,521 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Inhabitr : BookingForm</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/custom/date.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/custom/booking_new.css" type="text/css"/>
+  <script type="text/javascript" src="assets/js/modernizr-2.7.0.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<header>
+  <div class="container-fluid">
+    <a href="#" class="brand">
+      <img src="assets/img/inhabitr-logo.svg" alt="Inhabitr" />
+    </a>
+    <ul class="navigation">
+      <li class="account">
+        <a href="#">
+          <div class="thumb-image">
+            <i class="icon-avatar"></i>
+          </div>
+          <em>Hi {Username}</em>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#"><em>Log out</em></a></li>
+        </ul>
+      </li>
+      <li class="help">
+        <a href="#">
+          Help
+        </a>
+      </li>
+      <li class="add-listing">
+        <a href="#">
+          <b>Add Listing</b>
+          <em>it's free</em>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div class="title">
+      <h1>Booking</h1>
+    </div>
+    <div class="hero">
+      <h2>$1500 / 1150ft2 - APRIL 1st: 2-bedroom unit looking for SUBLEASE (West Loop)</h2>
+      <img src="images/hero-01.jpg" alt="hero" class="img-responsive">
+    </div>
+    <form id="booking">
+      <div class="row">
+        <section>
+          <div class="col-md-offset-2 col-md-8 col-md-pull-2">
+            <label>How it works:</label>
+            <div class="col-md-12 col-md-offset-2 col-sm-12 col-xs-12 img_steps">
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="#">
+                  <img src="images/step1.png">
+                </a>
+                <label>step 1</label>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="#">
+                  <img src="images/step2.png">
+                </a>
+                <label>step 2</label>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="#">
+                  <img src="images/step3.png">
+                </a>
+                <label>step 3</label>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="#">
+                  <img src="images/step4.png">
+                </a>
+                <label>step 4</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-offset-3 col-md-8 col-md-pull-2">
+            <div class="col-md-12 col-md-offset-2 col-sm-12 col-xs-12 img_steps">
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <p class="steps_name">FIll the application</p>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <p class="steps_name">Landlord approves</p>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <p class="steps_name">Sign the Lease</p>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <p class="steps_name">Sit back and relax</p>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix" style="height: 200px;"></div>
+        </section>
+        <div class="col-md-6 col-sm-6 ">
+          <div class="column">
+            <label>Your Details:</label>
+            <div class="column-row">
+              <div class="two-column ">
+                <input type="text" name="firstname" class="form-control" placeholder="First Name*">
+              </div>
+              <div class="two-column pull-right">
+                <input type="text" name="lastname" class="form-control" placeholder="Last Name*">
+              </div>
+            </div>
+            <div class="column-row">
+              <div class="partion-column two-column">
+                <input type="email" name="email" class="form-control" placeholder="Email*">
+              </div>
+            </div>
+            <div class="column-row">
+              <div class="two-column">
+                <input type="tel" name="phone" class="form-control" placeholder="Telephone">
+              </div>
+              <div class="two-column pull-right">
+                <input type="text" name="" class="form-control" placeholder="Date of Birth*" id="datepicker">
+                <span class="icon-date field-icon"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+
+          <div class="column">
+            <label>Current Address*:</label>
+            <div class="column-row">
+              <div class="single-column">
+                <input type="text" name="address01" class="form-control" placeholder="Address 1">
+              </div>
+            </div>
+            <div class="column-row">
+              <div class="two-column">
+                <input type="text" name="address02" class="form-control" placeholder="Address 2">
+              </div>
+              <div class="two-column pull-right">
+                <select class="custom-select form-control" name="city" placeholder="Select City">
+                  <option value="">Select City</option>
+                  <option>Option 01</option>
+                  <option>Option 02</option>
+                  <option>Option 03</option>
+                  <option>Option 04</option>
+                </select>
+              </div>
+            </div>
+            <div class="column-row">
+              <div class="two-column">
+                <select class="custom-select form-control" name="state" placeholder="Select State">
+                  <option value="">Select State</option>
+                  <option>Option 01</option>
+                  <option>Option 02</option>
+                  <option>Option 03</option>
+                  <option>Option 04</option>
+                </select>
+              </div>
+              <div class="two-column pull-right zipcode">
+                <input type="text" name="zip" class="form-control" placeholder="Zipcode">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <div class="column">
+            <label>Lease Duration:</label>
+            <div class="column-row">
+              <div class="two-column">
+                <input type="text" name="leasestart" class="form-control datepicker" placeholder="Lease Start*">
+                <span class="icon-date field-icon"></span>
+              </div>
+              <div class="two-column pull-right float">
+                <input type="text" name="leaseend" class="form-control datepicker" placeholder="Lease End*">
+                <span class="icon-date field-icon"></span>
+              </div>
+            </div>
+            <label class="subhead"><span>** </span>Please note, End date should be last day of the month</label>
+          </div>
+          <div class="column">
+            <label>Income and FICO Score:</label>
+            <div class="column-row">
+              <div class="two-column">
+                <input type="text" name="monthly" class="form-control" placeholder="Monthly Income">
+              </div>
+              <div class="two-column pull-right float">
+                <select class="custom-select form-control" name="fico" placeholder="FICO Score">
+                  <option value="">FICO Score</option>
+                  <option> < 550 </option>
+                  <option> 550 - 649 </option>
+                  <option> 650 - 699 </option>
+                  <option> 700 - 749 </option>
+                  <option> > 749 </option>
+                  <option> No Score (Students only) </option>
+                </select>
+              </div>
+            </div>
+          </div></div>
+          <div class="column-row col-md-8 col-sm-8">
+            <label><span>** </span>Self reported</label><br />
+            <label><span>Sorry! Your FICO Score is too low.</span></label>
+            <div class="column">
+              <div class="column-row">
+                <div class="single-column">
+                  <label class="inline-label">Have a co-signer?</label>
+                  <div class="radio-group">
+                    <input type="radio" class="form-control" name="co-signer" id="sign">
+                    <label for="sign">Yes</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" class="form-control" name="co-signer" id="no_sign">
+                    <label for="no_sign">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-row">
+                <label class="inline">Please provide your co-signer's FICO Score</label>
+                <div class="two-column">
+                  <select class="custom-select form-control" name="fico" placeholder="FICO Score">
+                    <option value="">FICO Score</option>
+                    <option> < 550 </option>
+                    <option> 550 - 649 </option>
+                    <option> 650 - 699 </option>
+                    <option> 700 - 749 </option>
+                    <option> > 749 </option>
+                    <option> No Score (Students only) </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </form>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <p>Payment Summary:</p>
+        <div class="payment col-md-6 col-sm-6 col-xs-12">
+          <h4>PAY NOW</h4>
+          <div class="payment-detail-row">
+            <h3>Booking Amount: <span>$100.00</span></h3>
+            <p>Fully Refundable</p>
+            <h4 class="pay_now">Pay Now: <span>$100.00</span></h4>
+          </div>
+        </div>
+        <div class="payment col-md-6 col-sm-6 col-xs-12">
+          <h4>PAY ON APPROVAL</h4>
+          <div class="payment-detail-row">
+            <h3>Security Deposit: <span>$975.00</span></h3>
+            <h3>1st Month Rent: <span>$650.00</span></h3>
+            <h3>Move-in Fee: <span>$75.00</span></h3>
+            <h4 class="total">Pay on Approval: <span>$1700.00</span></h4>
+          </div>
+        </div>
+      </div>
+      <div class="column col-md-12 col-sm-12 col-xs-12">
+        <div class="column-row">
+          <label>Mode of Payment:</label>
+          <div class="single-column">
+            <div class="radio-group">
+              <input type="radio" class="form-control" name="payment-mode" id="credit">
+              <label for="credit">Credit Card</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" class="form-control" name="payment-mode" id="bank">
+              <label for="bank">Bank Transfer</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12" id="credit_detail"><!--style="display: none"-->
+        <div class="column wide col-md-6 col-sm-6 col-xs-12">
+          <label>Credit Card Details:</label>
+          <div class="column-row">
+            <div class="partion-column two-column">
+              <input type="text" name="card_number" class="form-control" placeholder="xxxx xxxx xxxx xxxx" id="card_number">
+              <!--<i class="fa fa-credit-card-alt" aria-hidden="true"></i>-->
+            </div>
+          </div>
+          <div class="column-row">
+            <div class="two-column">
+              <input type="text" name="name_card" class="form-control" placeholder="Name on Card" id="name_card">
+            </div>
+            <div class="two-column pull-right" id="expiry">
+              <input type="text" name="" class="form-control" placeholder="Expiry (mm/yyyy)" id="datepicker2">
+              <span class="icon-date field-icon"></span>
+            </div>
+          </div>
+          <div class="column-row">
+            <div class="two-column">
+              <input type="text" name="cvv" class="form-control" placeholder="CVV" id="cvv">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <label>Billing Address:</label>
+          <div class="column">
+            <div class="column-row">
+              <div class="single-column">
+                <input type="text" name="address01" class="form-control" placeholder="Address 1">
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-row">
+              <div class="single-column">
+                <input type="text" name="address02" class="form-control" placeholder="Address 2">
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-row">
+              <div class="two-column">
+                <select class="custom-select form-control" name="city" placeholder="Select City">
+                  <option value="">Select City</option>
+                  <option>Option 01</option>
+                  <option>Option 02</option>
+                  <option>Option 03</option>
+                  <option>Option 04</option>
+                </select>
+              </div>
+              <div class="two-column pull-right zipcode">
+                <select class="custom-select form-control" name="state" placeholder="Select State">
+                  <option value="">Select State</option>
+                  <option>Option 01</option>
+                  <option>Option 02</option>
+                  <option>Option 03</option>
+                  <option>Option 04</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-row">
+              <div class="two-column">
+                <input type="text" name="zip" class="form-control" placeholder="Zipcode">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="display: none" id="bank_detail">
+        <div class="column">
+          <div class="column-row">
+            <label>Bank Account Details</label>
+            <div class="single-column">
+              <input type="text" name="name" class="form-control" placeholder="Name">
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-row">
+            <div class="single-column">
+              <label class="inline-label">Account Type</label>
+              <div class="radio-group">
+                <input type="radio" class="form-control" name="account-type" id="checking">
+                <label for="checking">Checking</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" class="form-control" name="account-type" id="savings">
+                <label for="savings">Savings</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-row">
+            <div class="two-column">
+              <input type="text" name="" class="form-control" placeholder="Account Number">
+            </div>
+            <div class="two-column pull-right">
+              <input type="text" name="" class="form-control" placeholder="Routing Number">
+            </div>
+          </div>
+        </div>
+        <div class="column fullwide">
+          <div class="column-row wide">
+            <div class="single-column">
+              <input type="checkbox" name="agree" id="agree" class="form-control">
+              <label for="agree">I agree to <a href="#">Terms & Conditions</a> & authorize Inhabitr Corp. to charge me as per the above</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-submit">
+      <input type="submit" name="" value="Book Now" class="btn btn-default btn-xlg booknow" >
+    </div>
+    </form>
+</section>
+<footer>
+  <div class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="column newsletter">
+            <label>Keep up to date with all news related to Inhabitr by signing up. We promise not to spam!</label>
+            <form class="form-inline" id="newsletter">
+              <div class="form-group">
+                <input type="email" class="form-control input-lg" name="email" id="email" placeholder="Your Email Address">
+              </div>
+              <button type="submit" class="btn btn-default  btn-lg subscribe" id="submit_book">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <span class="contact">
+            <i class="icon-phone"></i><a href="#" class="tel">+1 844 244 8093</a>
+            </span>
+          <ul class="social-media">
+            <li><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-instagram"></i></a></li>
+            <li><a href="#"><i class="icon-linked"></i></a></li>
+            <li><a href="#"><i class="icon-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="base">
+    <div class="container-fluid">
+      <ul class="menu">
+        <li>
+          <a href="#">about Inhabitr</a>
+        </li>
+        <li>
+          <a href="#">get in touch</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; Copyright 2017 Inhabitr
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="assets/js/plugins.js" ></script>
+<script type="text/javascript" src="assets/js/main.js" ></script>
+
+<script>
+    $(function () {
+        'use strict';
+        var url = window.location.hostname === 'blueimp.github.io' ? '//jquery-file-upload.appspot.com/' : 'server/php/';
+        $('#fileupload').fileupload({
+            url: url,
+            dataType: 'json',
+            done: function (e, data) {
+                $.each(data.result.files, function (index, file) {
+                    $('<p/>').text(file.name).appendTo('#files');
+                });
+            },
+            progressall: function (e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        }).prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
+    });
+
+    $( "#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+
+    });
+    $( "#datepicker2").datepicker({
+        changeMonth: true,
+        changeYear: true,
+
+    });
+    $(document).ready(function() {
+        $("#bank").click(function () {
+            $("#bank_detail").toggle("fast", function () {
+                $("#credit_detail").css("display", "none");
+                $("#bank_detail").css("display", "block");
+
+            });
+
+        });
+        $("#credit").click(function () {
+            $("#credit_detail").toggle("fast", function () {
+                $("#bank_detail").css("display", "none");
+                $("#credit_detail").css("display", "block");
+            });
+
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

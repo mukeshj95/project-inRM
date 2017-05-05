@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Inhabitr : Price and Availability</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/custom/date.css" type="text/css"/>
+  <script type="text/javascript" src="assets/js/modernizr-2.7.0.min.js"></script>
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Modal -->
+<div id="OnlineLeaseNo" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal-body">
+      	<center>
+        <p>It takes significantly less time to close a tenant/roomate when accepting online payments. Are you sure you don't want to accept online payments?</p>
+        </center>
+        <div class="form-submit">
+          <input type="submit" name="" value="No" class="pull-left btn btn-grey btn-xlg btn-inline booknow" >
+          <input type="submit" name="" value="Yes" data-dismiss="modal" class="pull-right btn btn-default btn-xlg booknow" >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <header>
+    <div class="container-fluid">
+      <a href="#" class="brand">
+        <img src="assets/img/inhabitr-logo.svg" alt="Inhabitr" />
+      </a>
+      <ul class="navigation">
+        <li class="account">
+          <a href="#">
+            <div class="thumb-image">
+              <i class="icon-avatar"></i>
+            </div>
+            <em>Hi {Username}</em>
+          </a>
+          <ul class="sub-menu">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#"><em>Log out</em></a></li>
+          </ul>
+        </li>
+        <li class="help">
+          <a href="#">
+            Help
+          </a>
+        </li>
+        <li class="add-listing">
+          <a href="#">
+            <b>Add Listing</b>
+            <em>it's free</em>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <section>
+    <div class="container">
+
+      <div class="tabs">
+        <ul class="horizontal-tabs">
+          <li class="active"><a href="#"><i class="icon-home"></i></a></li>
+          <li class="active"><a href="#"><i class="fa fa-usd"></i></a></li>
+          <li><a href="#"><i class="icon-gallery"></i></a></li>
+          <li><a href="#"><i class="icon-profile"></i></a></li>
+          <li><a href="#"><i class="icon-roommates"></i></a></li>
+        </ul>
+      </div>
+      
+      <div class="title">
+        <h1>Price and Availability</h1>
+        <p>What's it going to cost.</p>
+      </div>
+
+      <div class="list-form">
+        
+        <div class="column fullwide">
+
+          <div class="column-row">
+            <div class="row">
+            <div class="col-md-3">
+              <label>Rent</label>
+              <input type="text" class="form-control input-lg" name="" placeholder="$$$">
+            </div>
+            <div class="col-md-3">
+              <label>Security Deposit</label>
+              <input type="text" class="form-control input-lg" name="" placeholder="$$$">
+            </div>
+
+            <div class="col-md-3">
+              <div class="column-row wide">
+                <label>Move-in Fee (if any)</label>
+                <input type="text" class="form-control input-lg" name="" placeholder="$$$">
+                <div class="single-column">
+                  <input type="checkbox" name="newlease" id="Move" class="form-control Move">
+                  <label for="Move">Adjustable in 1st Month’s Rent</label>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+
+          <br/>&nbsp;<br/>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="column fullwide">
+              <div class="column-row">
+                <div class="single-column">
+                  <label class="inline-label nospace">Accept online lease Signin?</label>
+                  <div class="radio-group">
+                    <input type="radio" class="form-control" name="OnlineLease" id="OnlineLeaseYes" checked>
+                    <label for="OnlineLeaseYes">Yes</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" class="form-control" name="OnlineLease" id="OnlineLeaseNo">
+                    <label for="OnlineLeaseNo" class="OnlineLeaseNo">no</label>
+                  </div>
+                </div>
+                <p class="note"><em>You will be required to upload all documents (e.g.: Blank Lease, Declarations, etc) that you require your lessee/sublessee to fill & sign.</em></p>
+              </div>
+
+              <div class="column-row">
+                <label class="inline-label nospace">Upload documents</label>
+                <div class="padding">
+                  <div class="single-column">
+                    <span class="btn btn-primary btn-inline btn-lg fileinput-button">
+                      <i class="glyphicon glyphicon-plus"></i>
+                      <span>Upload Lease</span>
+                      <input id="fileupload" name="attachment" type="file" name="files[]" multiple>
+                    </span>
+                  </div>
+                  <label class="inline-label nospace note">Don't have a lease? Choose from our <a href="#">library</a></label>
+                </div>
+              </div>
+
+              <div class="column-row">
+                <div class="single-column">
+                  <label class="inline-label nospace">What other checks do you require from your lessee/sublessee? (Check all that apply)</label>
+                  <div class="padding">
+                    <div class="checklist">
+                      <input type="checkbox" name="doument" id="contract" class="form-control" checked>
+                      <label for="contract" class="default">Credit Check (view sample report <a href="#">here</a>)</label>
+                    </div>
+                    <div class="checklist">
+                      <input type="checkbox" name="doument" id="contract" class="form-control" checked>
+                      <label for="contract" class="default">Criminal & Background Check (view sample report <a href="#">here</a>)</label>
+                    </div>
+                    <div class="checklist">
+                      <input type="checkbox" name="doument" id="contract" class="form-control" checked>
+                      <label for="contract" class="default">Reference Check (view sample report <a href="#">here</a>)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column-row" style="margin-top: 20px">
+                <div class="single-column">
+                  <label class="inline-label nospace">What other requirements do you have from your lessee/sublessee?</label>
+                  <div class="padding">
+                    <div class="checklist">
+                      <input type="checkbox" name="doument" id="contract" class="form-control" checked>
+                      <label for="contract" class="default">Renter’s Insurance</label>
+                    </div>
+                    <div class="checklist">
+                      <input type="checkbox" name="doument" id="contract" class="form-control" checked>
+                      <label for="contract" class="default">Rent Guarantee Insurance/Co-signer (if credit score is below average)</label>
+                    </div>
+                  </div>
+                  <br/>&nbsp;</br>
+                </div>
+              </div>
+
+              <!--
+              <div class="column-row">
+                <br/>&nbsp;</br>
+                <label class="inline-label nospace">Available from</label>
+                <div class="single-column pull-right">
+                  <div class="partion-column">
+                    <input name="" class="form-control input-lg datepicker col-md-8" placeholder="Date of Birth*" type="text">
+                    <span class="icon-date field-icon"></span>
+                  </div>
+                </div>
+              </div>
+              -->
+
+            </div>
+
+          </div>
+          <div class="col-md-6">
+
+            <div class="column fullwide">
+              <div class="column-row">
+                <div class="single-column">
+                  <label class="inline-label nospace">Accept online rent collection?</label>
+                  <div class="radio-group">
+                    <input type="radio" class="form-control bank-details" name="Onlinerent" id="OnlinerentYes">
+                    <label for="OnlinerentYes">Yes</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" class="form-control bank-details" name="Onlinerent" id="OnlinerentNo" checked>
+                    <label for="OnlinerentNo">no</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggle">
+            <div data="OnlinerentYes">
+
+              <div class="column wide">
+              
+                <div class="column-row">
+                  <label>Bank Account Details</label>
+                  <div class="single-column">
+                    <input type="text" name="" class="form-control input-lg" placeholder="Name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="column-row">
+                  <div class="two-column">
+                    <input type="text" name="" class="form-control input-lg" placeholder="Account Number">
+                  </div>
+                  <div class="two-column pull-right">
+                    <input type="text" name="" class="form-control input-lg" placeholder="Routing Number">
+                  </div>
+                </div>
+                <div class="column-row">
+                  <div class="single-column">
+                    <label class="inline-label nospace">Use for</label>
+                    <div class="radio-group">
+                      <input type="radio" class="form-control" name="Use" id="Rent">
+                      <label for="Rent">Rent</label>
+                    </div>
+                    <div class="radio-group">
+                      <input type="radio" class="form-control" name="Use" id="Deposit">
+                      <label for="Deposit">Deposit</label>
+                    </div>
+                    <label class="inline-label nospace note"><small>*Payment will be trasffered to your account as soon as the tenant's transaction successfull</small></a></label>
+                    <label class="note"><a href="#" class="">+ Add bank account</a></label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column fullwide">
+                <div class="column-row wide">
+                  <div class="single-column">
+                    <input type="checkbox" name="agree" id="agree" class="form-control">
+                    <label for="agree">I hereby, accept the <a href="#">Terms & Conditions</a> for online booking and rent collection</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--
+            <div class="column">
+              <div class="column-row">
+                <div class="single-column">
+                  <span class="btn btn-primary btn-inline btn-lg fileinput-button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Upload discloseure document</span>
+                    <input id="fileupload" name="attachment" type="file" name="files[]" multiple>
+                  </span>
+                </div>
+                <label class="inline-label nospace note">Don't have a lease? Choose from our <a href="#">library</a></label>
+              </div>
+            </div>
+            -->
+
+
+          </div>
+          </div>
+
+          <div class="title">
+              <h1>Features</h1>
+              <p>What are the amenities and features that make your listing awesome?</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="furnished" id="furnished" class="form-control" checked>
+                  <label for="furnished" class="default"><img src="assets/img/furnished.svg" class="icon" /> Furnished</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="Fitness" id="Fitness" class="form-control" checked>
+                  <label for="Fitness" class="default"><img src="assets/img/fitness.svg" class="icon" /> Fitness Center</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="Washer" id="Washer" class="form-control">
+                  <label for="Washer" class="default"><img src="assets/img/washer.svg" class="icon" />Washer/Dryer In-building</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="Electricity" id="Electricity" class="form-control">
+                  <label for="Electricity" class="default"><img src="assets/img/light.svg" class="icon" />Electricity Included</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="Water" id="Water" class="form-control" checked>
+                  <label for="Water" class="default"><img src="assets/img/water-included.svg" class="icon" />Water Included </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="Doorman" id="Doorman" class="form-control" checked>
+                  <label for="Doorman" class="default"><img src="assets/img/watchmen.svg" class="icon" />Doorman</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="washerUnit" id="washerUnit" class="form-control">
+                  <label for="washerUnit" class="default"><img src="assets/img/washer-unit.svg" class="icon" />Doorman</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="Closet" id="Closet" class="form-control">
+                  <label for="Closet" class="default"><img src="assets/img/closet.svg" class="icon" />Large Closet</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="heat" id="heat" class="form-control">
+                  <label for="heat" class="default"><img src="assets/img/heat.svg" class="icon" />Heat Included</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="WiFi" id="WiFi" class="form-control">
+                  <label for="WiFi" class="default"><img src="assets/img/wifi.svg" class="icon" />WiFi Included</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="air" id="air" class="form-control">
+                  <label for="air" class="default"><img src="assets/img/air.svg" class="icon" />Air Conditioning Included</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="checklist withicon">
+                  <input type="checkbox" name="elevator" id="elevator" class="form-control">
+                  <label for="air" class="default"><img src="assets/img/elevator.svg" class="icon" />Elevator</label>
+                </div>
+              </div>
+            </div>
+
+            <br/>&nbsp;<br/>
+
+            <div class="form-submit">
+              <input type="submit" name="" value="Back" class="pull-left btn btn-grey btn-xlg btn-inline booknow" >
+              <input type="submit" name="" value="Continue" class="pull-right btn btn-default btn-xlg booknow" >
+            </div>
+
+        </div>
+        
+        
+
+      </div>
+
+
+    </div>
+  </section>
+  
+  <footer>
+    <div class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="column newsletter">
+              <label>Keep up to date with all news related to Inhabitr by signing up. We promise not to spam!</label>
+              <form class="form-inline" id="newsletter">
+                <div class="form-group">
+                  <input type="email" class="form-control input-lg" name="email" id="email" placeholder="Your Email Address">
+                </div>
+                <button type="submit" class="btn btn-default  btn-lg subscribe" id="submit_book">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <span class="contact">
+            <i class="icon-phone"></i><a href="#" class="tel">+1 844 244 8093</a>
+            </span>
+            <ul class="social-media">
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-instagram"></i></a></li>
+              <li><a href="#"><i class="icon-linked"></i></a></li>
+              <li><a href="#"><i class="icon-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="base">
+      <div class="container-fluid">
+        <ul class="menu">
+          <li>
+            <a href="#">about Inhabitr</a>
+          </li>
+          <li>
+          <a href="#">get in touch</a>
+          </li>
+        </ul>
+        <p class="copyright">
+          &copy; Copyright 2017 Inhabitr
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js" ></script>
+  <script type="text/javascript" src="assets/js/plugins.js" ></script>
+  <script type="text/javascript" src="assets/js/main.js" ></script>
+
+  <script>
+    $(function () {
+        'use strict';
+        var url = window.location.hostname === 'blueimp.github.io' ? '//jquery-file-upload.appspot.com/' : 'server/php/';
+        $('#fileupload').fileupload({
+          url: url,
+          dataType: 'json',
+          done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+              $('<p/>').text(file.name).appendTo('#files');
+            });
+          },
+          progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .progress-bar').css(
+              'width',
+              progress + '%'
+            );
+          }
+        }).prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
+    });
+    </script>
+
+</body>
+</html>

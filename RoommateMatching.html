@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Inhabitr : Desired tenant profile</title>
+    <meta name="description" content="">
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/custom/date.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/custom/public.css" type="text/css"/>
+    <link rel="stylesheet" href="roommate-css.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="assets/custom/sl.css" type="text/css"/>-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<header>
+    <div class="container-fluid">
+        <a href="#" class="brand">
+            <img src="assets/img/inhabitr-logo.svg" alt="Inhabitr" />
+        </a>
+        <ul class="navigation">
+            <li class="account">
+                <a href="#">
+                    <div class="thumb-image">
+                        <i class="icon-avatar"></i>
+                    </div>
+                    <em>Hi {Username}</em>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#"><em>Log out</em></a></li>
+                </ul>
+            </li>
+            <li class="help">
+                <a href="#">
+                    Help
+                </a>
+            </li>
+            <li class="add-listing">
+                <a href="#">
+                    <b>Add Listing</b>
+                    <em>it's free</em>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column-pic1">
+                <img src="images/roomate-match.png" alt="display-match-pic" class="img-responsive">
+                <span class="main-head">Find your Roommate with our</span>
+                <span class="head2">Roommate Matching <br />Tool</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="heading">Please provide responses to some simple questions about yourself and your desired roommate</p>
+            <p class="tag-line">This helps us to match you with someone who shares your preferences and personality</p>
+            <div class="col-md-8 col-xs-12 col-sm-10 input_group1">
+                <div class="column-name">
+                    <div class="column-row">
+                        <label>Your Details:</label>
+                        <input type="text" class="form-control input-lg" name="" placeholder="Full Name*">
+                    </div>
+                </div>
+                <div class="column fullwide">
+                    <div class="radio-list">
+                        <label class="inline-label nospace">Gender</label>
+                        <div class="radio-group">
+                            <input class="form-control" name="Gender" id="Male" checked="" type="radio">
+                            <label for="Male">Male</label>
+                        </div>
+                        <div class="radio-group">
+                            <input class="form-control" name="Gender" id="Female" type="radio">
+                            <label for="Female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-email">
+                    <div class="column-row">
+                        <input type="email" name="email" class="form-control input-lg" placeholder="Email*">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-row">
+                        <div class="two-column">
+                            <input type="tel" name="phone" class="form-control input-lg" placeholder="Telephone">
+                        </div>
+                        <div class="two-column pull-right" id="picker">
+                            <input type="text" name="" class="form-control input-lg Datepicker" placeholder="Date of Birth*" id="datepicker">
+                            <span class="icon-date field-icon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-full">
+                <div class="column">
+                    <p class="required">* Required Fields</p>
+                </div>
+                <h4>Your preferred Roommate:</h4>
+                <div class="column fullwide">
+                    <div class="radio-list nomargin">
+                        <label class="inline-label nospace">Gender</label>
+                        <div class="radio-group">
+                            <input class="form-control" name="Genderpreferred" id="Same-as" checked="" type="radio">
+                            <label for="Same-as">Same as mine</label>
+                        </div>
+                        <div class="radio-group">
+                            <input class="form-control" name="Genderpreferred" id="Anyone" type="radio">
+                            <label for="Anyone">Willing to share
+                                with anyone</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column fullwide">
+                    <div class="radio-list">
+                        <label class="inline-label nospace">Age</label>
+                        <div class="radio-group">
+                            <input class="form-control" name="Age" id="age<30" checked="" type="radio">
+                            <label for="age<30">< 30 years</label>
+                        </div>
+                        <div class="radio-group">
+                            <input class="form-control" name="Age" id="age>30" type="radio">
+                            <label for="age>30">> 30 years</label>
+                        </div>
+                        <div class="radio-group">
+                            <input class="form-control" name="Age" id="preference" type="radio">
+                            <label for="preference">No preference</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column fullwide">
+                    <div class="radio-list">
+                        <label class="inline-label nospace">Profession</label>
+                        <div class="radio-group">
+                            <input class="form-control" name="Profession" id="Student" checked="" type="radio">
+                            <label for="Student">Students Ony</label>
+                        </div>
+                        <div class="radio-group">
+                            <input class="form-control" name="Profession" id="Professional" type="radio">
+                            <label for="Professional">Professionals
+                                Only</label>
+                        </div>
+                        <div class="radio-group" id="ProfessionNo">
+                            <input class="form-control" name="Profession" id="ProfessionNoMatter" type="radio">
+                            <label for="ProfessionNoMatter">No preference</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="column-row">
+                        <label>If you are a student too, please specify your university and school of study</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-row">
+                        <input type="text" class="form-control input-lg" name="" placeholder="University Name">
+                    </div>
+                </div>
+                <div class="column">
+                    <p class="uni-same">This sometimes helps you find students from the same school</p>
+                </div>
+                <div class="column fullwide margin">
+                    <div class="radio-list">
+                        <label class="inline-label nospace">With Pets</label>
+                        <div class="radio-group pets">
+                            <input class="form-control" name="WithPets" id="Comfortable" checked="" type="radio">
+                            <label for="Comfortable">Comfortable</label>
+                        </div>
+                        <div class="radio-group pets">
+                            <input class="form-control" name="WithPets" id="NotComfortable" type="radio">
+                            <label for="NotComfortable">Not Comfortable</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12 input_group half-margin">
+            <div class="column fullwide col-md-offset-1">
+                <div class="radio-list">
+                    <label class="inline-label nospace" id="pets">What kind of pet are
+                        you comfortable with?</label>
+                    <div class="radio-group">
+                        <input class="form-control" name="PetType" id="Dogs" checked="" type="radio">
+                        <label for="Dogs">Dogs</label>
+                    </div>
+                    <div class="radio-group">
+                        <input class="form-control" name="PetType" id="Cats" type="radio">
+                        <label for="Cats">Cats</label>
+                    </div>
+                    <div class="radio-group">
+                        <input class="form-control" name="PetType" id="Others" type="radio">
+                        <label for="Others">Others</label>
+                    </div>
+                </div>
+                <div class="two-column half">
+                    <input type="tel" name="phone" class="form-control input-lg" placeholder="If Others, please specify">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12 input-group">
+            <div class="#">
+            <label class="details-match">Personality Details:</label>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p class="title">You</p>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">When around people, I am</label>
+                    <select class="custom-select form-control" name="aroundPeople" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">When dealing with people and roommates, I can</label>
+                    <select class="custom-select form-control" name="people&roommates" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">In my own world, I am</label>
+                    <select class="custom-select form-control" name="ownWorld" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p class="title">Your preferred Roommate</p>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">And I’d like my roommate to be</label>
+                    <select class="custom-select form-control" name="aroundPeople" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">And I’d like my roommate to</label>
+                    <select class="custom-select form-control" name="people&roommates" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">And I’d like my roommate to be</label>
+                    <select class="custom-select form-control" name="ownWorld" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12" style="padding-left: 0;">
+            <h5 class="details-match">Routine Preferences:</h5>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p class="title">You</p>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">An Early Bird or a Night Owl:</label>
+                    <select class="custom-select form-control" name="nightOwl" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">I clean my room:</label>
+                    <select class="custom-select form-control" name="roomClean" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">Smoking Habit:</label>
+                    <select class="custom-select form-control" name="smoking" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <p class="title">Your preferred Roommate</p>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">An Early Bird or a Night Owl:</label>
+                    <select class="custom-select form-control" name="nightOwl" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">Prefer my roommate and I clean:</label>
+                    <select class="custom-select form-control" name="roomClean" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+                <div class="two-column col-md-10 col-xs-12 col-sm-10 select-class">
+                    <label class="details-match">And I’d like my roommate to:</label>
+                    <select class="custom-select form-control" name="smoking" placeholder="Select a response">
+                        <option value="">Select a response</option>
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                        <option>Option 03</option>
+                        <option>Option 04</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <h5 class="details-match heading2">Move-in Preferences:</h5>
+            <div class="column">
+                <label class="inline-label nospace1">Prefer to move in by:</label>
+                <div class="two-column pull-right" id="picker1">
+                    <input type="text" name="" class="form-control input-lg datepicker" placeholder="mm/dd/yyyy" id="datepicker2">
+                    <span class="icon-date field-icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-12 rommie">
+            <p class="roomie-find">If you can’t find a roommate to move in same week with you, how long are you willing to absorb the rent for the entire apartment*</p>
+            <div class="radio-group radio-list">
+                <input class="form-control" name="details" id="details1" checked="" type="radio">
+                <label for="details1" class="half-col-10">None at all - I will not move into this room</label>
+            </div>
+            <div class="radio-group radio-list">
+                <input class="form-control" name="details" id="details2" checked="" type="radio">
+                <label for="details2" class="half-col-10">I will still take the room and will ideally like to find a roommate in 2 - 4 weeks, but realize I will have
+                    the responsibility to find a roommate</label>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 text-box">
+            <div class="column-row">
+                <label class="roomie-find">Additional comments you want to share about your desired roommate</label>
+                <div class="column-row">
+                    <textarea class="form-control" rows="6"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-10 col-xs-12 footer-text">
+            <div class="column-row">
+                <label class="roomie-find">If you have friends who may be interested in applying for a home with you or sharing a room with you
+                    please add their email IDs</label>
+            </div>
+            <div class="column-full">
+                <div class="two-column">
+                    <input type="email" name="emailid" class="form-control input-lg" placeholder="Valid Email Id">
+                </div>
+                <p class="title bottom-p">Add Another Email</p>
+            </div>
+        </div>
+        <div class="col-md-offset-2 col-md-9">
+            <p class="footer-text1">A copy of your responses will be emailed to the email address you provided.</p>
+            <p class="footer-text2">Please note that no personal details like your name and email address are shared until you authorize us</p>
+        </div>
+        <div class="form-submit submit-btn">
+            <input type="submit" name="" value="Sumbit" class="btn btn-default btn-xlg submit">
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="column newsletter">
+                        <label>Keep up to date with all news related to Inhabitr by signing up. We promise not to spam!</label>
+                        <form class="form-inline" id="newsletter">
+                            <div class="form-group">
+                                <input type="email" class="form-control input-lg" name="email" id="email" placeholder="Your Email Address">
+                            </div>
+                            <button type="submit" class="btn btn-default  btn-lg subscribe">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+            <span class="contact">
+            <i class="icon-phone"></i><a href="#" class="tel">+1 844 244 8093</a>
+            </span>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-linked"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="base">
+        <div class="container-fluid">
+            <ul class="menu">
+                <li>
+                    <a href="#">about Inhabitr</a>
+                </li>
+                <li>
+                    <a href="#">get in touch</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                &copy; Copyright 2017 Inhabitr
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="assets/js/plugins.js" ></script>
+<script type="text/javascript" src="assets/js/main.js" ></script>
+<!--<script type="text/javascript" src="assets/custom/js/sl.js"></script>-->
+
+<script>
+    $( function() {
+        $("#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true,
+
+        });
+        $("#datepicker2").datepicker({
+            changeMonth: true,
+            changeYear: true,
+
+        });
+    });
+
+</script>
+</body>
+</html>
